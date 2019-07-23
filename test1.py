@@ -12,7 +12,7 @@ print('test message')
 fpcs = FpcHwTable(dev)
 fpcs.get()
 
-print(fpcs)
+#print(fpcs)
 #pprint(fpcs.keys())
 #pprint(fpcs.values())
 #for fpc in fpcs:
@@ -25,6 +25,7 @@ print(fpcs)
 
 xcvr_db = XcvrTable(dev)
 xcvr_db.get()
+pprint(xcvr_db.values())
 pprint(xcvr_db.items())
 
 dev.close()
